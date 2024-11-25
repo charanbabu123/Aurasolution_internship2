@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "commonjs",
+    "target": "es2018",
+    "moduleResolution": "node",
+    "outDir": "./dist/server",
+    "rootDir": "./server",
+    "noEmit": false,
+    "esModuleInterop": true
+  },
+  "include": ["server/**/*.ts"],
+  "exclude": ["node_modules", "dist", "src"]
+}
